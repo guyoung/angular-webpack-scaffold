@@ -1,4 +1,4 @@
-Angular2 Quick Start
+Angular 2 Quick Start
 ====================
 
 Let's start from zero and build a super simple Angular 2 application in TypeScript.

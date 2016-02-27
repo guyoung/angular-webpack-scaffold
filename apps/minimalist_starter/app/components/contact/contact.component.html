@@ -1,0 +1,24 @@
+<h2>Contacts!</h2>
+
+<contact-form [contact]="selectedContact" (saved)="reset()"></contact-form>
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="#contact of contacts | customOrderBy: ['-createdAt', 'name']" (click)="select(contact._id)">
+      <td>{{ contact.name }}</td>
+      <td>{{ contact.email }}</td>
+      <td>
+        <button (click)="remove($event, contact)" class="btn btn-default">
+          <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

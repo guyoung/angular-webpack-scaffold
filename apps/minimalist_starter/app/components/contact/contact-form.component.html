@@ -1,0 +1,15 @@
+<form [ngFormModel]="form" (ngSubmit)="form.valid && save()" novalidate class="form-inline">
+  <input ngControl="_id" [(ngModel)]="contact._id" type="hidden">
+  <div class="form-group">
+    <input ngControl="name" [(ngModel)]="contact.name" autofocus class="form-control" placeholder="Name">
+  </div>
+  <div class="form-group">
+    <input ngControl="email" [(ngModel)]="contact.email" class="form-control" placeholder="Email">
+  </div>
+  <button (click)="clear()" type="button" class="btn btn-default">
+    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Clear
+  </button>
+  <button [disabled]="!form.valid" class="btn btn-primary">
+    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> {{form.controls._id.value ? 'Update' : 'Create' }}
+  </button>
+</form>

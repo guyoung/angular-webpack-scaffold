@@ -1,0 +1,37 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main_navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a [routerLink]="['/Home']" class="navbar-brand">Home</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="main_navbar">
+      <ul class="nav navbar-nav">
+        <li><a [routerLink]="['/Contact']">Contacts</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section id="main_container" class="container-fluid">
+
+  <router-outlet></router-outlet>
+
+  <div class="footer">
+    <div class="container-fluid">
+      <div class="progress">
+        <div *ngIf="loading" class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100"
+             aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>

@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Angular2 Spotify Sample App</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">   
-       
+        <script>document.write('<base href="' + document.location + '" />');</script>
+        <meta charset="UTF-8">
+        <title>Angular2 Minimalist Starter</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">    
+
+        <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css"> 
+
+        <!-- 1. Load libraries -->
         <!-- IE required polyfills, in this exact order -->
         <script src="../../node_modules/es6-shim/es6-shim.min.js"></script>
         <script src="../../node_modules/systemjs/dist/system-polyfills.js"></script>    
@@ -12,9 +17,11 @@
         <script src="../../node_modules/systemjs/dist/system.src.js"></script>
         <script src="../../node_modules/typescript/lib/typescript.js"></script>
         <script src="../../node_modules/rxjs/bundles/Rx.js"></script>
-        <script src="../../node_modules/angular2/bundles/angular2.dev.js"></script> 
-        <script src="../../node_modules/angular2/bundles/router.dev.js"></script>       
-    
+        <script src="../../node_modules/angular2/bundles/angular2.dev.js"></script>
+        <script src="../../node_modules/angular2/bundles/router.dev.js"></script>  
+        <script src="../../node_modules/angular2/bundles/http.dev.js"></script>
+        
+        <!-- 2. Configure SystemJS -->
         <script>
           System.config({
             transpiler: 'typescript', 
@@ -25,8 +32,8 @@
                 .then(null, console.error.bind(console));
         </script>
     </head>
-  
+    <!-- 3. Display the application -->
     <body>
-        <app>Loading...</app>
+        <my-app>Loading...</my-app>
     </body>
 </html>

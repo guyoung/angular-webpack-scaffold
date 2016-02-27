@@ -8,20 +8,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/guyoung/GyPractice-Angular2.git"
+    "url": "git+https://github.com/guyoung/GyPractice-Angular2Advanced.git"
   },
   "author": "guyoung",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/guyoung/GyPractice-Angular2/issues"
+    "url": "https://github.com/guyoung/GyPractice-Angular2Advanced/issues"
   },
-  "homepage": "https://github.com/guyoung/GyPractice-Angular2#readme",
+  "homepage": "https://github.com/guyoung/GyPractice-Angular2Advanced#readme",
   "dependencies": {
-    "a2-in-memory-web-api": "^0.1.5",
     "angular2": "^2.0.0-beta.6",
+    "axios": "^0.9.1",
     "bootstrap": "^3.3.6",
     "es6-promise": "^3.0.2",
     "es6-shim": "^0.33.3",
+    "firebase-angular2": "^0.7.2",
+    "font-awesome": "^4.5.0",
+    "moment": "^2.11.2",
+    "ng2-material": "^0.2.2",
     "reflect-metadata": "^0.1.2",
     "rxjs": "^5.0.0-beta.0",
     "systemjs": "^0.19.20",
